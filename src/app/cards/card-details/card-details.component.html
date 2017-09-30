@@ -1,0 +1,156 @@
+<app-page-header [title]="!loading ? card.name : 'Loading Card'"></app-page-header>
+
+<app-page-content *ngIf="!loading">
+  <div class="card-data-container">
+    <div class="card-image">
+      <a [href]="cardImageUrl" target="_blank">
+        <img [src]="cardThumbUrl" [alt]="card.name + ' image'">
+      </a>
+    </div>
+    <div class="card-data">
+      <div class="card-data-item">
+        <span class="card-label">
+          Card Name:
+        </span>
+        <span class="card-value">
+          {{card.name}}
+        </span> 
+      </div>
+      <div class="card-data-item" *ngIf="card.initiative">
+        <span class="card-label">
+          Initiative:
+        </span>
+        <span class="card-value">
+          {{card.initiative}}
+        </span> 
+      </div>
+      <div class="card-data-item">
+        <span class="card-label">
+          Element:
+        </span>
+        <span class="card-value">
+          {{card.element}}
+        </span> 
+      </div><div class="card-data-item">
+        <span class="card-label">
+          Card Type:
+        </span>
+        <span class="card-value">
+          {{card.type}} - {{card.subType}}
+        </span> 
+      </div>
+      <div class="card-data-item">
+        <span class="card-label">
+          Ability:
+        </span>
+        <span class="card-value">
+          {{card.ability}}
+        </span> 
+      </div>
+      <ng-template [ngIf]="card.type === 'Warrior'">
+        <div class="card-data-item">
+          <span class="card-label">
+            Life:
+          </span>
+          <span class="card-value">
+            {{card.life}}
+          </span> 
+        </div>
+        <div class="card-data-item">
+          <span class="card-label">
+            Speed:
+          </span>
+          <span class="card-value">
+            {{card.speed}}
+          </span> 
+        </div>
+        <div class="card-data-item">
+          <span class="card-label">
+            Widom:
+          </span>
+          <span class="card-value">
+            {{card.wisdom}}
+          </span> 
+        </div>
+      </ng-template>
+      <div class="card-data-item" *ngIf="card.damage">
+        <span class="card-label">
+          Damage:
+        </span>
+        <span class="card-value">
+          {{card.damage}}
+        </span> 
+      </div>
+      <div class="card-data-item" *ngIf="card.flavorText">
+        <span class="card-label">
+          Flavor Text:
+        </span>
+        <span class="card-value">
+          {{card.flavorText}}
+        </span> 
+      </div>
+      <div class="card-data-item">
+        <span class="card-label">
+          Artist:
+        </span>
+        <span class="card-value">
+          {{card.artist}}
+        </span> 
+      </div>
+      <div class="card-data-item">
+        <span class="card-label"><!-- TODO: Add link to search for just this set -->
+          Set:
+        </span>
+        <span class="card-value">
+          {{card.set.name}} ({{card.set.code}})
+        </span> 
+      </div>
+      <div class="card-data-item">
+        <span class="card-label">
+          Card Number:
+        </span>
+        <span class="card-value">
+          {{card.collectorsNumber}}
+        </span> 
+      </div>
+
+      <div class="attack-grid" *ngIf="card.type === 'Warrior' || card.type === 'Weapon'">
+        <div class="card-data-item">
+          <span class="card-label">
+            Attack Grid:
+          </span>
+          <span class="card-value">
+            <md-grid-list cols="3" rowHeight="30px" role="list">
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][0]}}</md-grid-tile>
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[1][0]}}</md-grid-tile>
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][0]}}</md-grid-tile>
+              
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][1]}}</md-grid-tile>
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[1][1]}}</md-grid-tile>
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][1]}}</md-grid-tile>
+              
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][2]}}</md-grid-tile>
+              <md-grid-tile role="listitem" colspan="1" rowspan="1"><md-icon>keyboard_arrow_up</md-icon></md-grid-tile>
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][2]}}</md-grid-tile>
+              
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][3]}}</md-grid-tile>
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[1][3]}}</md-grid-tile>
+              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][3]}}</md-grid-tile>
+            </md-grid-list>
+          </span>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card-rulings">
+    <h3>
+      Rulings and Errata
+    </h3>
+    <span *ngIf="!card.rulings || card.rulings.length === 0" class="warning">No rulings or errata for this card</span>
+    <ng-template [ngIf]="card.rulings && card.rulings.length > 0">
+      Error: Rulings could not be rendered.
+    </ng-template>
+  </div>
+</app-page-content>

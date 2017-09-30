@@ -1,0 +1,22 @@
+<app-page-header title="About"></app-page-header>
+
+<app-page-content>
+  <h2>Warriors of Orlandia</h2>
+  <p>
+    Warriors of Orlandia is a tactical card game available exclusively at Anime Festival Orlando. 
+  </p>
+  <div class="card-preview">
+    <md-card role="group">
+      <md-card-header>
+        <md-card-title>
+          {{card.name}}
+        </md-card-title>
+      </md-card-header>
+      <img md-card-image [src]='cardImageUrl' [alt]='card.name'>  
+      <md-card-content>
+        This is an example of an {{card.type}} card from the <em>{{card.set.name}}</em> set. You can find all of the cards on the cards page.
+      </md-card-content>
+    </md-card>
+    
+  </div>
+</app-page-content>

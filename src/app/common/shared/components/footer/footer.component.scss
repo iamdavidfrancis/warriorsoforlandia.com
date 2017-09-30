@@ -1,0 +1,70 @@
+.warriors-footer {
+  margin-top: 50px;
+  padding: 22px;
+  font-size: 12px;
+
+  color: rgba(255, 255, 255, 0.87);
+  background: #673ab7;
+
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.warriors-footer-list {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 8px;
+}
+
+.warriors-footer-links  ul {
+  list-style: none;
+  margin: 0 40px;
+  padding: 0;
+  display: flex;
+
+  li:not(:last-child) {
+    padding-right: 7px;
+    border-right: 1px rgba(255, 255, 255, 0.87) solid;
+    margin-right: 7px;
+  }
+
+  a {
+    font-size: 16px;
+    padding: 0;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.warriors-footer-copyright {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 884px) {
+  // .warriors-footer-list,
+  .warriors-footer-links  ul {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px rgba(255, 255, 255, 0.87) solid;
+  }
+    
+  .warriors-footer-links  ul li:not(:last-child) {
+    margin-right: 0;
+    border: none;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .warriors-footer-copyright p {
+    text-align: center;
+  }
+}

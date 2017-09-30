@@ -1,0 +1,27 @@
+<app-page-header title="Card Search"></app-page-header>
+
+<app-page-content>
+
+  <app-search-form (search)="performSearch($event)" [searchModel]="search"></app-search-form>
+
+  <app-loading-icon *ngIf="searching"></app-loading-icon>
+
+  <div class="error" *ngIf="error">
+    {{error}}
+  </div>
+  <div class="results" *ngIf="results && !searching && !error">
+    <div class="results-grid">
+      <md-grid-list cols="4" rowHeight="1:1.34" gutterSize="10">
+        <md-grid-tile *ngFor="let card of results.results">
+          <a [routerLink]="['/cards', card.id]">
+          <md-grid-tile-header>{{card.name}}</md-grid-tile-header>
+          <img [src]="getCardImage(card)" [alt]="card.name + ' image'">
+          <md-grid-tile-footer>
+            {{card.type}} {{card.subType ? '- ' + card.subType : ''}}
+          </md-grid-tile-footer>
+          </a>
+        </md-grid-tile>
+      </md-grid-list>
+    </div>
+  </div>
+</app-page-content>
