@@ -9,6 +9,10 @@ export class Constants {
     oneWeekExpires: 86400 * 7,
   };
 
+  public cards = {
+    performEmptySearch: true,
+  };
+
   public http = {
     baseUrl: 'https://api.warriorsoforlandia.com/api/',
     staticsBaseUrl: 'http://statics.warriorsoforlandia.com/',

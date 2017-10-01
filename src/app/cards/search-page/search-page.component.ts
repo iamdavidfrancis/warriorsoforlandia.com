@@ -1,3 +1,4 @@
+import { Constants } from './../../common/core/constants';
 import { Subscription } from 'rxjs/Rx';
 import { CardSearch, CardResults, CardData } from './../../common/interfaces/card-models';
 import { CardDataService } from './../../common/core/services/card-data.service';
@@ -111,6 +112,6 @@ export class SearchPageComponent implements OnInit, OnDestroy {
       return true;
     }
 
-    return false;
+    return Constants.Instance.cards.performEmptySearch;
   }
 }
