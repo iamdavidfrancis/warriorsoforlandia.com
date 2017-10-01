@@ -11,7 +11,7 @@
   </div>
   <div class="results" *ngIf="results && !searching && !error">
     <div class="results-grid">
-      <md-grid-list cols="4" rowHeight="1:1.34" gutterSize="10">
+      <md-grid-list [cols]="gridColumns" rowHeight="1:1.34" gutterSize="10">
         <md-grid-tile *ngFor="let card of results.results">
           <a [routerLink]="['/cards', card.id]">
           <md-grid-tile-header>{{card.name}}</md-grid-tile-header>

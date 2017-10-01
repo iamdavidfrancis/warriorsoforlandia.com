@@ -1,7 +1,7 @@
 import { Subscription } from 'rxjs/Rx';
 import { CardSearch, CardResults, CardData } from './../../common/interfaces/card-models';
 import { CardDataService } from './../../common/core/services/card-data.service';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -15,6 +15,8 @@ export class SearchPageComponent implements OnInit, OnDestroy {
   public searching: boolean;
   public error: any;
 
+  public gridColumns = 4;
+
   private searchSubscription: Subscription;
   private routeSubscription: Subscription;
 
@@ -24,6 +26,8 @@ export class SearchPageComponent implements OnInit, OnDestroy {
     private router: Router) { }
 
   ngOnInit() {
+    this.doResize(window.innerWidth);
+
     this.search = {
       name: '',
       type: '',
@@ -47,6 +51,22 @@ export class SearchPageComponent implements OnInit, OnDestroy {
     this.routeSubscription.unsubscribe();
     if (this.searchSubscription) {
       this.searchSubscription.unsubscribe();
+    }
+  }
+
+  // Make the grid responsize
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.doResize((event.target as Window).innerWidth);
+  }
+
+  private doResize(innerWidth: number) {
+    if (innerWidth < 480) {
+      this.gridColumns = 1;
+    } else if (innerWidth < 980) {
+      this.gridColumns = 2;
+    } else {
+      this.gridColumns = 4;
     }
   }
 
