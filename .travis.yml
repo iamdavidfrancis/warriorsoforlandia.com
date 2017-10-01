@@ -1,0 +1,12 @@
+dist: trusty
+language: node_js
+node_js:
+  - '6.11'
+
+before_script:
+  - npm install -g angular-cli
+  - npm install -g angular-cli-ghpages
+  - npm install
+  - ng build --prod --aot --base-href="https://warriorsoforlandia.com"
+
+script: angular-cli-ghpages --repo=https://GH_TOKEN@github.com/iamdavidfrancis/warriorsoforlandia.com.git --name="David Francis" --email=iamdavidfrancis@gmail.com
