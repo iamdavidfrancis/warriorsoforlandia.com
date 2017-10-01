@@ -24,7 +24,7 @@
           {{card.initiative}}
         </span> 
       </div>
-      <div class="card-data-item">
+      <div class="card-data-item" *ngIf="card.element">
         <span class="card-label">
           Element:
         </span>
@@ -36,7 +36,7 @@
           Card Type:
         </span>
         <span class="card-value">
-          {{card.type}} - {{card.subType}}
+          {{card.type}} {{card.subType ? ' - '+ card.subType : ''}}
         </span> 
       </div>
       <div class="card-data-item">

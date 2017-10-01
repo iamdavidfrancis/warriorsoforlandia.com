@@ -4,7 +4,7 @@
 
   <app-search-form (search)="performSearch($event)" [searchModel]="search"></app-search-form>
 
-  <app-loading-icon *ngIf="searching"></app-loading-icon>
+  <md-spinner *ngIf="searching"></md-spinner>
 
   <div class="error" *ngIf="error">
     {{error}}

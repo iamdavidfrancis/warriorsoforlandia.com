@@ -12,7 +12,8 @@ import {
   MdFormFieldModule,
   MdInputModule,
   MdOptionModule,
-  MdSelectModule
+  MdSelectModule,
+  MdProgressSpinnerModule
 } from '@angular/material';
 
 @NgModule({
@@ -31,7 +32,8 @@ import {
     MdFormFieldModule,
     MdInputModule,
     MdOptionModule,
-    MdSelectModule
+    MdSelectModule,
+    MdProgressSpinnerModule
   ]
 })
 export class AngularMaterialModule { }

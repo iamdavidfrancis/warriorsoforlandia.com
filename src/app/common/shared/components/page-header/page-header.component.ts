@@ -1,3 +1,4 @@
+import { Constants } from './../../../core/constants';
 import { Component, OnInit, OnChanges, SimpleChanges, Input } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
@@ -20,11 +21,12 @@ export class PageHeaderComponent implements OnInit, OnChanges {
     }
 
     let displayString = this.title;
-    if (displayString) {
-      displayString += ' - ';
+    if (displayString !== Constants.Instance.siteTitle) {
+      if (displayString) {
+        displayString += ' - ';
+      }
+      displayString += Constants.Instance.siteTitle;
     }
-    displayString += 'Warriors of Orlandia';
-
     this.titleService.setTitle(displayString);
 
   }

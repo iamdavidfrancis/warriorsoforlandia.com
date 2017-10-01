@@ -1,6 +1,8 @@
 export class Constants {
   public static Instance = new Constants();
 
+  public siteTitle = 'Warriors of Orlandia';
+
   public cache = {
     useCache: true,
     defaultExpires: 86400, // 24 hours
@@ -8,7 +10,7 @@ export class Constants {
   };
 
   public http = {
-    baseUrl: 'http://localhost:65367/api/',
+    baseUrl: 'https://api.warriorsoforlandia.com/api/',
     staticsBaseUrl: 'http://statics.warriorsoforlandia.com/',
     cards: {
       search: 'cards/search',
