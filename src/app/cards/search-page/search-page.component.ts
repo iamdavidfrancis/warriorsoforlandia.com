@@ -51,7 +51,14 @@ export class SearchPageComponent implements OnInit, OnDestroy {
   }
 
   public performSearch(search: CardSearch): void {
-    this.router.navigate(['cards'], {queryParams: { name: search.name, type: search.type, set: search.set, artist: search.artist }});
+    this.router.navigate(['cards'], {
+      queryParams: {
+        name: search.name,
+        type: search.type,
+        set: search.set,
+        artist: search.artist
+      }
+    });
   }
 
   private searchInternal() {
