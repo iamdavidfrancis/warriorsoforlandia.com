@@ -15,6 +15,10 @@
     </md-option>
   </md-select>
 
+  <md-form-field class="card-artist">
+    <input mdInput placeholder="Artist" [(ngModel)]="searchModel.artist" name="card-artist">
+  </md-form-field>
+
   <button md-button type="button" (click)="onSubmit()" color="primary">Search</button>
   <button md-button type="button" (click)="searchForm.reset();" color="warn">Reset</button>
 </form>

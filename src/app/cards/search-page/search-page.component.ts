@@ -27,14 +27,16 @@ export class SearchPageComponent implements OnInit, OnDestroy {
     this.search = {
       name: '',
       type: '',
-      set: ''
+      set: '',
+      artist: ''
     };
 
     this.routeSubscription = this.route.queryParams.subscribe(params => {
       this.search = {
         name: params['name'],
         type: params['type'],
-        set: params['set']
+        set: params['set'],
+        artist: params['artist']
       };
 
       this.searchInternal();
@@ -49,7 +51,7 @@ export class SearchPageComponent implements OnInit, OnDestroy {
   }
 
   public performSearch(search: CardSearch): void {
-    this.router.navigate(['cards'], {queryParams: { name: search.name, type: search.type, set: search.set }});
+    this.router.navigate(['cards'], {queryParams: { name: search.name, type: search.type, set: search.set, artist: search.artist }});
   }
 
   private searchInternal() {
@@ -78,10 +80,10 @@ export class SearchPageComponent implements OnInit, OnDestroy {
   }
 
   private shouldPerformSearch(): boolean {
-    if (this.search.name || this.search.type || this.search.set) {
+    if (this.search.name || this.search.type || this.search.set || this.search.artist) {
       return true;
     }
 
-    return true;
+    return false;
   }
 }

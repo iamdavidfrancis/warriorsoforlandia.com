@@ -10,6 +10,7 @@ export interface CardSearch {
   name?: string;
   type?: string;
   set?: string;
+  artist?: string;
 }
 
 export interface CardData {
