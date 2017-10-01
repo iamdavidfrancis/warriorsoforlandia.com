@@ -8,6 +8,21 @@
  border-right: 1px #ccc solid;
 }
 
+.card-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  a {
+    text-decoration: none;
+    margin: 0 4px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .card-data {
   padding: 15px 0 15px 15px;
 

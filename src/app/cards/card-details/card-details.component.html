@@ -1,7 +1,16 @@
-<app-page-header [title]="!loading ? card.name : 'Loading Card'"></app-page-header>
+<app-page-header [title]="cardTitle"></app-page-header>
 
-<app-page-content *ngIf="!loading">
-  <div class="card-data-container">
+<app-page-content>
+  <div class="card-error" *ngIf="error">
+    <md-icon>warning</md-icon>
+    {{errorResult.message}}
+
+    <a routerLink='/cards'>Click here</a>
+    
+    to go back to card search.
+  </div>
+  
+  <div class="card-data-container" *ngIf="!loading && !error">
     <div class="card-image">
       <a [href]="cardImageUrl" target="_blank">
         <img [src]="cardThumbUrl" [alt]="card.name + ' image'">
@@ -143,8 +152,8 @@
       </div>
     </div>
   </div>
-  <hr>
-  <div class="card-rulings">
+  <hr *ngIf="!loading && !error">
+  <div class="card-rulings" *ngIf="!loading && !error">
     <h3>
       Rulings and Errata
     </h3>
