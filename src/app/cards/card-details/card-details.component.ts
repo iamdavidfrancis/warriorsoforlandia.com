@@ -46,7 +46,7 @@ export class CardDetailsComponent implements OnInit, OnDestroy {
       }, (error: HttpError) => {
         this.error = true;
         this.errorResult = error;
-        this.cardTitle = `Error: ${error.title}`;
+        this.cardTitle = error.title;
       }, () => {
         this.loading = false;
       });
