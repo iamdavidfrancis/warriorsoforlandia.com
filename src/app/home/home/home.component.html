@@ -1,7 +1,22 @@
-<app-page-header [title]="siteTitle"></app-page-header>
+<header class="header-background mat-typography">
+  <div class="header-section">
+    <div class="header-headline">
+      <h1 class="mat-h1">{{siteTitle}}</h1>
+      <h2>{{siteCaption}}</h2>
+    </div>
+    <div class="header-start">
+      <button md-raised-button (click)="viewCards()">Browse Cards</button>
+    </div>
+  </div>
+</header>
 
 <app-page-content cssClass="mat-typography">
-Welcome!
+  <p>
+    Welcome to Warriors of Orlandia, Anime Festival Orlando's exclusive card game. This site is still under construction. While we get this site finished up, you can look through all of the cards from the <em>Curse of the White Witch</em> and <em>Crisis on Infinite Orlandias</em> sets. <em>School Spirits</em> cards are not available online yet.
+  </p>
+  <p>
+    More information about the game, including the rulebook and how to play sections are coming soon.
+  </p>
 <!-- <md-card class="example-card">
   <md-card-header>
     <div md-card-avatar class="example-header-image"></div>
