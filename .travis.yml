@@ -4,7 +4,7 @@ node_js:
   - '6.11'
 
 before_script:
-  - npm install -g angular-cli
+  - npm install -g @angular/cli
   - npm install -g angular-cli-ghpages
   - npm install
   - ng build --prod --aot --base-href="https://warriorsoforlandia.com"
