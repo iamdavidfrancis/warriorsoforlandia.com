@@ -12,8 +12,8 @@ export class SearchFormComponent implements OnInit, OnDestroy {
   public sets: Array<Set>;
   public types: Array<Type>;
 
-  private loadingSets = true;
-  private loadingTypes = true;
+  public loadingSets = true;
+  public loadingTypes = true;
 
   @Input() public searchModel: CardSearch;
   @Output() public search: EventEmitter<CardSearch> = new EventEmitter<CardSearch>();
