@@ -23,7 +23,7 @@ export class AboutComponent implements OnInit {
         code: 'CWW',
         year: '2015'
       },
-      type: 'Inspiration'
+      type: 'mastery'
     };
 
     this.cardImageUrl = this.cardDataService.getCardImageUrl(this.card, true);
