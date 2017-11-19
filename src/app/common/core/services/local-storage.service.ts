@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import * as localforage from 'localforage';
+import 'rxjs/add/observable/fromPromise';
 
 @Injectable()
 export class LocalStorageService {

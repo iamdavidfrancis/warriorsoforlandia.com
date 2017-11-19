@@ -1,5 +1,5 @@
 import { Constants } from './../../common/core/constants';
-import { Subscription } from 'rxjs/Rx';
+import { Subscription } from 'rxjs/Subscription';
 import { CardSearch, CardResults, CardData } from './../../common/interfaces/card-models';
 import { CardDataService } from './../../common/core/services/card-data.service';
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
@@ -15,6 +15,8 @@ export class SearchPageComponent implements OnInit, OnDestroy {
   public search: CardSearch;
   public searching: boolean;
   public error: any;
+
+  public showSetMissingMessage: boolean;
 
   public gridColumns = 4;
 
@@ -35,6 +37,8 @@ export class SearchPageComponent implements OnInit, OnDestroy {
       set: '',
       artist: ''
     };
+
+    this.showSetMissingMessage = false;
 
     this.routeSubscription = this.route.queryParams.subscribe(params => {
       this.search = {
@@ -89,6 +93,7 @@ export class SearchPageComponent implements OnInit, OnDestroy {
 
     this.error = null;
     this.searching = true;
+    this.showSetMissingMessage = false;
 
     if (this.searchSubscription) {
       this.searchSubscription.unsubscribe();
@@ -97,6 +102,10 @@ export class SearchPageComponent implements OnInit, OnDestroy {
     this.searchSubscription = this.cardDataService.searchCards(this.search).subscribe(data => {
       this.results = data;
       this.searching = false;
+
+      if (!this.search.set || this.search.set === 'SS') {
+        this.showSetMissingMessage = true;
+      }
     }, error => {
       this.searching = false;
       this.error = error;

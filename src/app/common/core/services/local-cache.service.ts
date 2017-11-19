@@ -3,6 +3,9 @@ import { Observable } from 'rxjs/Observable';
 import { LocalStorageService } from './local-storage.service';
 import { Injectable } from '@angular/core';
 import {isEmpty, isString, isNumber, isDate} from 'lodash';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/mergeMap';
 
 @Injectable()
 export class LocalCacheService {
@@ -38,11 +41,11 @@ export class LocalCacheService {
           }
           return null;
         })
-        .flatMap((val: CacheStorageRecord | null) => {
+        .mergeMap((val: CacheStorageRecord | null) => {
           if (!isEmpty(val)) {
             return Observable.of(val.value);
           } else {
-            return observable.flatMap((value: any) => this.value(key, value, expires)); // Set the value
+            return observable.mergeMap((value: any) => this.value(key, value, expires)); // Set the value
           }
         });
     } else {
