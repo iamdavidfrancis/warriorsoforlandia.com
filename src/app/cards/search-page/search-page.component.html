@@ -4,24 +4,24 @@
 
   <app-search-form (search)="performSearch($event)" [searchModel]="search"></app-search-form>
 
-  <md-spinner *ngIf="searching"></md-spinner>
+  <mat-spinner *ngIf="searching"></mat-spinner>
 
   <div class="error" *ngIf="error">
     {{error}}
   </div>
   <div class="results" *ngIf="results && !searching && !error">
     <div class="results-grid">
-      <md-grid-list [cols]="gridColumns" rowHeight="1:1.34" gutterSize="10">
-        <md-grid-tile *ngFor="let card of results.results">
+      <mat-grid-list [cols]="gridColumns" rowHeight="1:1.34" gutterSize="10">
+        <mat-grid-tile *ngFor="let card of results.results">
           <a [routerLink]="['/cards', card.id]">
-          <md-grid-tile-header>{{card.name}}</md-grid-tile-header>
+          <mat-grid-tile-header>{{card.name}}</mat-grid-tile-header>
           <img [src]="getCardImage(card)" [alt]="card.name + ' image'">
-          <md-grid-tile-footer>
+          <mat-grid-tile-footer>
             {{card.type}} {{card.subType ? '- ' + card.subType : ''}}
-          </md-grid-tile-footer>
+          </mat-grid-tile-footer>
           </a>
-        </md-grid-tile>
-      </md-grid-list>
+        </mat-grid-tile>
+      </mat-grid-list>
     </div>
   </div>
 </app-page-content>

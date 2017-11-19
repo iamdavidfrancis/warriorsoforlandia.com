@@ -1,24 +1,28 @@
 <form *ngIf="!loadingSets && !loadingTypes" (ngSubmit)="onSubmit()" #searchForm>
-  <md-form-field class="card-name">
-    <input mdInput placeholder="Card Name" [(ngModel)]="searchModel.name" name="card-name">
-  </md-form-field>
+  <mat-form-field class="card-name">
+    <input matInput placeholder="Card Name" [(ngModel)]="searchModel.name" name="card-name">
+  </mat-form-field>
 
-  <md-select placeholder="Card Type" [(ngModel)]="searchModel.type" name="card-type">
-    <md-option *ngFor="let type of types" [value]="type.id">
-      {{type.name}}
-    </md-option>
-  </md-select>
+  <mat-form-field>
+    <mat-select placeholder="Card Type" [(ngModel)]="searchModel.type" name="card-type">
+      <mat-option *ngFor="let type of types" [value]="type.id">
+        {{type.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 
-  <md-select placeholder="Set" [(ngModel)]="searchModel.set" name="card-set">
-    <md-option *ngFor="let set of sets" [value]="set.code">
-      {{set.name}}
-    </md-option>
-  </md-select>
+  <mat-form-field>
+    <mat-select placeholder="Set" [(ngModel)]="searchModel.set" name="card-set">
+      <mat-option *ngFor="let set of sets" [value]="set.code">
+        {{set.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 
-  <md-form-field class="card-artist">
-    <input mdInput placeholder="Artist" [(ngModel)]="searchModel.artist" name="card-artist">
-  </md-form-field>
+  <mat-form-field class="card-artist">
+    <input matInput placeholder="Artist" [(ngModel)]="searchModel.artist" name="card-artist">
+  </mat-form-field>
 
-  <button md-button type="button" (click)="onSubmit()" color="primary">Search</button>
-  <button md-button type="button" (click)="searchForm.reset();" color="warn">Reset</button>
+  <button mat-button type="button" (click)="onSubmit()" color="primary">Search</button>
+  <button mat-button type="button" (click)="searchForm.reset();" color="warn">Reset</button>
 </form>

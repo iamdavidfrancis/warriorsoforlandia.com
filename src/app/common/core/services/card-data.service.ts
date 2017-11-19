@@ -1,7 +1,7 @@
 import { LocalCacheService } from './local-cache.service';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
 
 import { Constants } from './../constants';
 import { CardResults, CardSearch, CardData, Set, Type } from './../../interfaces/card-models';

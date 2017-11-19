@@ -2,18 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {
-  MdToolbarModule,
-  MdIconModule,
-  MdButtonModule,
-  MdMenuModule,
-  MdCardModule,
-  MdSidenavModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatButtonModule,
+  MatMenuModule,
+  MatCardModule,
+  MatSidenavModule,
   MatGridListModule,
-  MdFormFieldModule,
-  MdInputModule,
-  MdOptionModule,
-  MdSelectModule,
-  MdProgressSpinnerModule
+  MatFormFieldModule,
+  MatInputModule,
+  MatOptionModule,
+  MatSelectModule,
+  MatProgressSpinnerModule
 } from '@angular/material';
 
 @NgModule({
@@ -22,18 +22,18 @@ import {
   ],
   declarations: [],
   exports: [
-    MdToolbarModule,
-    MdIconModule,
-    MdButtonModule,
-    MdMenuModule,
-    MdCardModule,
-    MdSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatCardModule,
+    MatSidenavModule,
     MatGridListModule,
-    MdFormFieldModule,
-    MdInputModule,
-    MdOptionModule,
-    MdSelectModule,
-    MdProgressSpinnerModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatProgressSpinnerModule
   ]
 })
 export class AngularMaterialModule { }

@@ -1,6 +1,6 @@
 import {Component, NgModule} from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
-import {MdButtonModule, MdMenuModule} from '@angular/material';
+import {MatButtonModule, MatMenuModule} from '@angular/material';
 import {RouterModule} from '@angular/router';
 
 @Component({
@@ -11,7 +11,7 @@ import {RouterModule} from '@angular/router';
 export class NavBarComponent {}
 
 @NgModule({
-  imports: [MdButtonModule, MdMenuModule, RouterModule],
+  imports: [MatButtonModule, MatMenuModule, RouterModule],
   exports: [NavBarComponent],
   declarations: [NavBarComponent],
 })

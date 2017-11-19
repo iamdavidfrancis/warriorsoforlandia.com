@@ -1,5 +1,5 @@
 import { Constants } from './../constants';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
 import { LocalStorageService } from './local-storage.service';
 import { Injectable } from '@angular/core';
 import {isEmpty, isString, isNumber, isDate} from 'lodash';

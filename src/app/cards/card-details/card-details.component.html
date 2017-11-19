@@ -2,7 +2,7 @@
 
 <app-page-content>
   <div class="card-error" *ngIf="error">
-    <md-icon>warning</md-icon>
+    <mat-icon>warning</mat-icon>
     {{errorResult.message}}
 
     <a routerLink='/cards'>Click here</a>
@@ -129,23 +129,23 @@
             Attack Grid:
           </span>
           <span class="card-value">
-            <md-grid-list cols="3" rowHeight="30px" role="list">
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][0]}}</md-grid-tile>
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[1][0]}}</md-grid-tile>
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][0]}}</md-grid-tile>
+            <mat-grid-list cols="3" rowHeight="30px" role="list">
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][0]}}</mat-grid-tile>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[1][0]}}</mat-grid-tile>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][0]}}</mat-grid-tile>
               
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][1]}}</md-grid-tile>
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[1][1]}}</md-grid-tile>
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][1]}}</md-grid-tile>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][1]}}</mat-grid-tile>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[1][1]}}</mat-grid-tile>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][1]}}</mat-grid-tile>
               
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][2]}}</md-grid-tile>
-              <md-grid-tile role="listitem" colspan="1" rowspan="1"><md-icon>keyboard_arrow_up</md-icon></md-grid-tile>
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][2]}}</md-grid-tile>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][2]}}</mat-grid-tile>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1"><mat-icon>keyboard_arrow_up</mat-icon></mat-grid-tile>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][2]}}</mat-grid-tile>
               
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][3]}}</md-grid-tile>
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[1][3]}}</md-grid-tile>
-              <md-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][3]}}</md-grid-tile>
-            </md-grid-list>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[0][3]}}</mat-grid-tile>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[1][3]}}</mat-grid-tile>
+              <mat-grid-tile role="listitem" colspan="1" rowspan="1">{{card.attackGrid[2][3]}}</mat-grid-tile>
+            </mat-grid-list>
           </span>
         </div>
         
