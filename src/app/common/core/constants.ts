@@ -15,7 +15,7 @@ export class Constants {
 
   public http = {
     baseUrl: 'https://api.warriorsoforlandia.com/api/',
-    staticsBaseUrl: 'http://statics.warriorsoforlandia.com/',
+    staticsBaseUrl: 'https://statics.warriorsoforlandia.com/',
     cards: {
       search: 'cards/search',
       get: 'cards/{id}',
