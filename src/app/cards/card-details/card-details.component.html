@@ -52,9 +52,7 @@
         <span class="card-label">
           Ability:
         </span>
-        <span class="card-value">
-          {{card.ability}}
-        </span> 
+        <span class="card-value" [innerHTML]="card.ability"></span> 
       </div>
       <ng-template [ngIf]="card.type === 'Warrior'">
         <div class="card-data-item">
@@ -94,9 +92,7 @@
         <span class="card-label">
           Flavor Text:
         </span>
-        <span class="card-value">
-          {{card.flavorText}}
-        </span> 
+        <span class="card-value" [innerHTML]="card.flavorText"></span> 
       </div>
       <div class="card-data-item">
         <span class="card-label">

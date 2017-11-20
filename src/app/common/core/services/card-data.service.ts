@@ -2,6 +2,7 @@ import { LocalCacheService } from './local-cache.service';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
 
 import { Constants } from './../constants';
 import { CardResults, CardSearch, CardData, Set, Type } from './../../interfaces/card-models';
@@ -26,7 +27,14 @@ export class CardDataService {
 
     const observable = this.httpClient.get<CardData>(queryUrl);
 
-    return this.cache.observable(cacheKey, observable);
+    return this.cache.observable(cacheKey, observable)
+      .map(card => {
+        // Format the card ability nicely. Maybe move somewhere else.
+        card.ability = card.ability.split('\n').join('<br/><br/>');
+        card.flavorText = card.flavorText.split('\n').join('<br/><br/>');
+
+        return card;
+      });
   }
 
   public getSets(): Observable<Array<Set>> {
