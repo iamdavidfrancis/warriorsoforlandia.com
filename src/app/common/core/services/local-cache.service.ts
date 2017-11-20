@@ -30,6 +30,7 @@ export class LocalCacheService {
    * @returns {Observable<T>}
    */
   public observable<T>(key: string, observable: Observable<T>, expires: number = Constants.Instance.cache.defaultExpires): Observable<T> {
+    // TODO: Investigate using a service worker to load data in the background.
     // Only use cache if the setting is true
     if (Constants.Instance.cache.useCache) {
       // Check if the item is in local storage, then check if it is expired,
