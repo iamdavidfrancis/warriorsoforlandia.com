@@ -30,8 +30,8 @@ export class CardDataService {
     return this.cache.observable(cacheKey, observable)
       .map(card => {
         // Format the card ability nicely. Maybe move somewhere else.
-        card.ability = card.ability.split('\n').join('<br/><br/>');
-        card.flavorText = card.flavorText.split('\n').join('<br/><br/>');
+        card.ability = card.ability.split('\n').join('<br/>');
+        card.flavorText = card.flavorText.split('\n').join('<br/>');
 
         return card;
       });
