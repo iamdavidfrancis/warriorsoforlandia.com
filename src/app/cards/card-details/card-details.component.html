@@ -55,14 +55,16 @@
         <span class="card-value" [innerHTML]="card.ability"></span> 
       </div>
       <ng-template [ngIf]="card.type === 'Warrior' || card.type === 'Reinforcement'">
-          <div class="card-data-item">
-              <span class="card-label">
-                Life:
-              </span>
-              <span class="card-value">
-                {{card.life}}
-              </span> 
-            </div>
+        <div class="card-data-item">
+          <span class="card-label">
+            Life:
+          </span>
+          <span class="card-value">
+            {{card.life}}
+          </span> 
+        </div>
+      </ng-template>
+      <ng-template [ngIf]="card.type === 'Reinforcement'">
         <div class="card-data-item">
           <span class="card-label">
             Defense:
