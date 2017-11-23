@@ -32,6 +32,7 @@ export interface CardData {
   speed?: number;
   wisdom?: number;
   damage?: number;
+  defense?: number;
 }
 
 export interface Set {
