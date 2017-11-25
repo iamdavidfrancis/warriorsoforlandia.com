@@ -7,6 +7,8 @@ import { SharedComponentsModule } from './../common/shared/components/shared-com
 import { HomeRoutingModule } from './home-routing.module';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { RulesComponent } from './rules/rules.component';
+import { RestrictedComponent } from './restricted/restricted.component';
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { HomeComponent } from './home/home.component';
     AngularMaterialModule,
     SharedComponentsModule
   ],
-  declarations: [HomeComponent, AboutComponent]
+  declarations: [HomeComponent, AboutComponent, RulesComponent, RestrictedComponent]
 })
 export class HomeModule { }
