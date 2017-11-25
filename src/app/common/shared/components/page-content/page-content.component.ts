@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PageContentComponent implements OnInit {
   @Input() cssClass: string;
+  @Input() lastUpdated: string;
 
   constructor() { }
 
