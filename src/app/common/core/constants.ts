@@ -4,7 +4,7 @@ export class Constants {
   public siteTitle = 'Warriors of Orlandia';
 
   public cache = {
-    useCache: false,
+    useCache: true,
     defaultExpires: 86400, // 24 hours
     oneWeekExpires: 86400 * 7,
   };
