@@ -16,8 +16,6 @@ export class SearchPageComponent implements OnInit, OnDestroy {
   public searching: boolean;
   public error: any;
 
-  public showSetMissingMessage: boolean;
-
   public gridColumns = 4;
 
   private searchSubscription: Subscription;
@@ -37,8 +35,6 @@ export class SearchPageComponent implements OnInit, OnDestroy {
       set: '',
       artist: ''
     };
-
-    this.showSetMissingMessage = false;
 
     this.routeSubscription = this.route.queryParams.subscribe(params => {
       this.search = {
@@ -93,7 +89,6 @@ export class SearchPageComponent implements OnInit, OnDestroy {
 
     this.error = null;
     this.searching = true;
-    this.showSetMissingMessage = false;
 
     if (this.searchSubscription) {
       this.searchSubscription.unsubscribe();
@@ -102,10 +97,6 @@ export class SearchPageComponent implements OnInit, OnDestroy {
     this.searchSubscription = this.cardDataService.searchCards(this.search).subscribe(data => {
       this.results = data;
       this.searching = false;
-
-      if (!this.search.set || this.search.set === 'SS') {
-        this.showSetMissingMessage = true;
-      }
     }, error => {
       this.searching = false;
       this.error = error;

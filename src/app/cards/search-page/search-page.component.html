@@ -9,12 +9,6 @@
   <div class="error" *ngIf="error">
     {{error}}
   </div>
-  <div class="missing-set" *ngIf="!searching && showSetMissingMessage">
-    <mat-icon>info_outline</mat-icon> 
-    <p>
-      We're working on uploading the complete School Spirits set, so some cards may be missing.
-    </p>
-  </div>
   <div class="results" *ngIf="results && !searching && !error">
     <div class="results-grid">
       <mat-grid-list [cols]="gridColumns" rowHeight="1:1.34" gutterSize="10">
