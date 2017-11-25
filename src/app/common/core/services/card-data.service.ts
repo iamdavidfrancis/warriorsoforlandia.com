@@ -75,6 +75,7 @@ export class CardDataService {
     name = name.split('\'').join('');
     name = name.split('.').join('');
     name = name.split(',').join('');
+    name = name.split(':').join('');
     return name;
   }
 }
