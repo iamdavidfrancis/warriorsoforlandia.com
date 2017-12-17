@@ -1,4 +1,4 @@
-@angular/material@5.0.0
+@angular/material@5.0.1
 MIT
 The MIT License
 
@@ -22,11 +22,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-@angular/forms@5.1.0
+@angular/forms@5.1.1
 MIT
 MIT
 
-core-js@2.5.2
+core-js@2.5.3
 MIT
 Copyright (c) 2014-2017 Denis Pushkarev
 
@@ -95,7 +95,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-@angular/cdk@5.0.0
+@angular/cdk@5.0.1
 MIT
 The MIT License
 
@@ -119,23 +119,23 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-@angular/common@5.1.0
+@angular/common@5.1.1
 MIT
 MIT
 
-@angular/core@5.1.0
+@angular/core@5.1.1
 MIT
 MIT
 
-@angular/platform-browser@5.1.0
+@angular/platform-browser@5.1.1
 MIT
 MIT
 
-@angular/router@5.1.0
+@angular/router@5.1.1
 MIT
 MIT
 
-@angular/animations@5.1.0
+@angular/animations@5.1.1
 MIT
 MIT
 
