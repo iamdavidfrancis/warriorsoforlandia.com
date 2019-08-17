@@ -3,11 +3,14 @@
 <app-page-content lastUpdated="November 25, 2017 3:00PM">
   <h3>Named Warriors:</h3>
   <div class="info">
-    If the Warrior chosed in a named character, you may not use an Augment with that deck.
+    If the Warrior chosen is a named character, you may not use an Augment with
+    that deck.
   </div>
   <ul style="list-style: none;">
     <li *ngFor="let card of namedWarriors">
-      <a [routerLink]="['/cards', card.id]" title="View {{card.name}}">{{card.name}}</a>
+      <a [routerLink]="['/cards', card.id]" title="View {{ card.name }}">{{
+        card.name
+      }}</a>
     </li>
   </ul>
 
@@ -17,8 +20,9 @@
   </div>
   <ul style="list-style: none;">
     <li *ngFor="let card of singletonCards">
-      <a [routerLink]="['/cards', card.id]" title="View {{card.name}}">{{card.name}}</a>
+      <a [routerLink]="['/cards', card.id]" title="View {{ card.name }}">{{
+        card.name
+      }}</a>
     </li>
   </ul>
-  
 </app-page-content>
