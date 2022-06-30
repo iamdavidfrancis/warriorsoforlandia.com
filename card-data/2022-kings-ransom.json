@@ -1,333 +1,333 @@
 {
   "Armor": [
     {
-      "Card Name": "Heavy Plate",
-      "Card Type": "Armor",
-      "cn": "21"
+      "cardName": "Heavy Plate",
+      "cardType": "Armor",
+      "collectorsNumber": "21"
     },
     {
-      "Card Name": "Iron Boots",
-      "Card Type": "Armor",
-      "cn": "22"
+      "cardName": "Iron Boots",
+      "cardType": "Armor",
+      "collectorsNumber": "22"
     },
     {
-      "Card Name": "Khazradanium Armor",
-      "Card Type": "Armor",
-      "cn": "23"
+      "cardName": "Khazradanium Armor",
+      "cardType": "Armor",
+      "collectorsNumber": "23"
     },
     {
-      "Card Name": "Magic Armor",
-      "Card Type": "Armor",
-      "cn": "24"
+      "cardName": "Magic Armor",
+      "cardType": "Armor",
+      "collectorsNumber": "24"
     },
     {
-      "Card Name": "Mask of the Betrayed",
-      "Card Type": "Armor",
-      "cn": "25"
+      "cardName": "Mask of the Betrayed",
+      "cardType": "Armor",
+      "collectorsNumber": "25"
     },
     {
-      "Card Name": "Shadow Cloak",
-      "Card Type": "Armor",
-      "cn": "26"
+      "cardName": "Shadow Cloak",
+      "cardType": "Armor",
+      "collectorsNumber": "26"
     },
     {
-      "Card Name": "Spiked Shield",
-      "Card Type": "Armor",
-      "cn": "27"
+      "cardName": "Spiked Shield",
+      "cardType": "Armor",
+      "collectorsNumber": "27"
     }
   ],
   "Encounter": [
     {
-      "Card Name": "Out of the Frying Pan",
-      "Card Type": "Encounter",
-      "cn": "E01"
+      "cardName": "Out of the Frying Pan",
+      "cardType": "Encounter",
+      "collectorsNumber": "E01"
     },
     {
-      "Card Name": "Förbanneld, Who Stole From Death",
-      "Card Type": "Encounter",
-      "cn": "E02"
+      "cardName": "Förbanneld, Who Stole From Death",
+      "cardType": "Encounter",
+      "collectorsNumber": "E02"
     },
     {
-      "Card Name": "Cursed Treasure",
-      "Card Type": "Encounter",
-      "cn": "E03"
+      "cardName": "Cursed Treasure",
+      "cardType": "Encounter",
+      "collectorsNumber": "E03"
     }
   ],
   "Reinforcement": [
     {
-      "Card Name": "Alluring Statue",
-      "Card Type": "Reinforcement",
-      "cn": "47"
+      "cardName": "Alluring Statue",
+      "cardType": "Reinforcement",
+      "collectorsNumber": "47"
     },
     {
-      "Card Name": "Mystical Duplicate",
-      "Card Type": "Reinforcement",
-      "cn": "48"
+      "cardName": "Mystical Duplicate",
+      "cardType": "Reinforcement",
+      "collectorsNumber": "48"
     },
     {
-      "Card Name": "Owl Familiar",
-      "Card Type": "Reinforcement",
-      "cn": "49"
+      "cardName": "Owl Familiar",
+      "cardType": "Reinforcement",
+      "collectorsNumber": "49"
     },
     {
-      "Card Name": "Warhorse",
-      "Card Type": "Reinforcement",
-      "cn": "50"
+      "cardName": "Warhorse",
+      "cardType": "Reinforcement",
+      "collectorsNumber": "50"
     }
   ],
   "Mastery": [
     {
-      "Card Name": "Arcane Bolts",
-      "Card Type": "Mastery",
-      "cn": "28"
+      "cardName": "Arcane Bolts",
+      "cardType": "Mastery",
+      "collectorsNumber": "28"
     },
     {
-      "Card Name": "Counterspell",
-      "Card Type": "Mastery",
-      "cn": "29"
+      "cardName": "Counterspell",
+      "cardType": "Mastery",
+      "collectorsNumber": "29"
     },
     {
-      "Card Name": "Drinking Contest",
-      "Card Type": "Mastery",
-      "cn": "30"
+      "cardName": "Drinking Contest",
+      "cardType": "Mastery",
+      "collectorsNumber": "30"
     },
     {
-      "Card Name": "Fireball",
-      "Card Type": "Mastery",
-      "cn": "31"
+      "cardName": "Fireball",
+      "cardType": "Mastery",
+      "collectorsNumber": "31"
     },
     {
-      "Card Name": "Gift of Prophecy",
-      "Card Type": "Mastery",
-      "cn": "32"
+      "cardName": "Gift of Prophecy",
+      "cardType": "Mastery",
+      "collectorsNumber": "32"
     },
     {
-      "Card Name": "Mend",
-      "Card Type": "Mastery",
-      "cn": "33"
+      "cardName": "Mend",
+      "cardType": "Mastery",
+      "collectorsNumber": "33"
     },
     {
-      "Card Name": "Pickpocket",
-      "Card Type": "Mastery",
-      "cn": "34"
+      "cardName": "Pickpocket",
+      "cardType": "Mastery",
+      "collectorsNumber": "34"
     },
     {
-      "Card Name": "Punishing Stance",
-      "Card Type": "Mastery",
-      "cn": "35"
+      "cardName": "Punishing Stance",
+      "cardType": "Mastery",
+      "collectorsNumber": "35"
     },
     {
-      "Card Name": "Sabotage",
-      "Card Type": "Mastery",
-      "cn": "36"
+      "cardName": "Sabotage",
+      "cardType": "Mastery",
+      "collectorsNumber": "36"
     },
     {
-      "Card Name": "Split The Arrow",
-      "Card Type": "Mastery",
-      "cn": "37"
+      "cardName": "Split The Arrow",
+      "cardType": "Mastery",
+      "collectorsNumber": "37"
     },
     {
-      "Card Name": "Water Spray",
-      "Card Type": "Mastery",
-      "cn": "38"
+      "cardName": "Water Spray",
+      "cardType": "Mastery",
+      "collectorsNumber": "38"
     }
   ],
   "Accessory": [
     {
-      "Card Name": "Ball Bearings",
-      "Card Type": "Accessory",
-      "cn": "39"
+      "cardName": "Ball Bearings",
+      "cardType": "Accessory",
+      "collectorsNumber": "39"
     },
     {
-      "Card Name": "Disguise Kit",
-      "Card Type": "Accessory",
-      "cn": "40"
+      "cardName": "Disguise Kit",
+      "cardType": "Accessory",
+      "collectorsNumber": "40"
     },
     {
-      "Card Name": "Dubious Potion",
-      "Card Type": "Accessory",
-      "cn": "41"
+      "cardName": "Dubious Potion",
+      "cardType": "Accessory",
+      "collectorsNumber": "41"
     },
     {
-      "Card Name": "Elven Pendant",
-      "Card Type": "Accessory",
-      "cn": "42"
+      "cardName": "Elven Pendant",
+      "cardType": "Accessory",
+      "collectorsNumber": "42"
     },
     {
-      "Card Name": "Pheonix Feather",
-      "Card Type": "Accessory",
-      "cn": "43"
+      "cardName": "Pheonix Feather",
+      "cardType": "Accessory",
+      "collectorsNumber": "43"
     },
     {
-      "Card Name": "Speed Potion",
-      "Card Type": "Accessory",
-      "cn": "44"
+      "cardName": "Speed Potion",
+      "cardType": "Accessory",
+      "collectorsNumber": "44"
     },
     {
-      "Card Name": "Spellbook",
-      "Card Type": "Accessory",
-      "cn": "45"
+      "cardName": "Spellbook",
+      "cardType": "Accessory",
+      "collectorsNumber": "45"
     },
     {
-      "Card Name": "Warrior's Emblem",
-      "Card Type": "Accessory",
-      "cn": "46"
+      "cardName": "Warrior's Emblem",
+      "cardType": "Accessory",
+      "collectorsNumber": "46"
     }
   ],
   "Augment": [
     {
-      "Card Name": "Flashblack: Detective",
-      "Card Type": "Augment",
-      "cn": "51"
+      "cardName": "Flashblack: Detective",
+      "cardType": "Augment",
+      "collectorsNumber": "51"
     },
     {
-      "Card Name": "Flashback: Kineticist",
-      "Card Type": "Augment",
-      "cn": "51"
+      "cardName": "Flashback: Kineticist",
+      "cardType": "Augment",
+      "collectorsNumber": "51"
     },
     {
-      "Card Name": "Hall of Heroes: Rise Into Legend",
-      "Card Type": "Augment",
-      "cn": "52"
+      "cardName": "Hall of Heroes: Rise Into Legend",
+      "cardType": "Augment",
+      "collectorsNumber": "52"
     },
     {
-      "Card Name": "Hall of Heroes: Tactical Advantage",
-      "Card Type": "Augment",
-      "cn": "52"
+      "cardName": "Hall of Heroes: Tactical Advantage",
+      "cardType": "Augment",
+      "collectorsNumber": "52"
     },
     {
-      "Card Name": "Instructum Incantarum: Nullification Aura",
-      "Card Type": "Augment",
-      "cn": "53"
+      "cardName": "Instructum Incantarum: Nullification Aura",
+      "cardType": "Augment",
+      "collectorsNumber": "53"
     },
     {
-      "Card Name": "Instructum Incantarum: The Elder Ritual",
-      "Card Type": "Augment",
-      "cn": "53"
+      "cardName": "Instructum Incantarum: The Elder Ritual",
+      "cardType": "Augment",
+      "collectorsNumber": "53"
     },
     {
-      "Card Name": "Menagerie of Mischief: Buying Influence",
-      "Card Type": "Augment",
-      "cn": "54"
+      "cardName": "Menagerie of Mischief: Buying Influence",
+      "cardType": "Augment",
+      "collectorsNumber": "54"
     },
     {
-      "Card Name": "Menagerie of Mischief: Feint",
-      "Card Type": "Augment",
-      "cn": "54"
+      "cardName": "Menagerie of Mischief: Feint",
+      "cardType": "Augment",
+      "collectorsNumber": "54"
     },
     {
-      "Card Name": "Strike A Deal: Fae",
-      "Card Type": "Augment",
-      "cn": "55"
+      "cardName": "Strike A Deal: Fae",
+      "cardType": "Augment",
+      "collectorsNumber": "55"
     },
     {
-      "Card Name": "Strike A Deal: Fel",
-      "Card Type": "Augment",
-      "cn": "55"
+      "cardName": "Strike A Deal: Fel",
+      "cardType": "Augment",
+      "collectorsNumber": "55"
     }
   ],
   "Warrior": [
     {
-      "Card Name": "Adventurer",
-      "Card Type": "Warrior",
-      "cn": "1"
+      "cardName": "Adventurer",
+      "cardType": "Warrior",
+      "collectorsNumber": "1"
     },
     {
-      "Card Name": "Bard",
-      "Card Type": "Warrior",
-      "cn": "2"
+      "cardName": "Bard",
+      "cardType": "Warrior",
+      "collectorsNumber": "2"
     },
     {
-      "Card Name": "Berserker",
-      "Card Type": "Warrior",
-      "cn": "3"
+      "cardName": "Berserker",
+      "cardType": "Warrior",
+      "collectorsNumber": "3"
     },
     {
-      "Card Name": "Cleric",
-      "Card Type": "Warrior",
-      "cn": "4"
+      "cardName": "Cleric",
+      "cardType": "Warrior",
+      "collectorsNumber": "4"
     },
     {
-      "Card Name": "Druid",
-      "Card Type": "Warrior",
-      "cn": "5"
+      "cardName": "Druid",
+      "cardType": "Warrior",
+      "collectorsNumber": "5"
     },
     {
-      "Card Name": "Rogue",
-      "Card Type": "Warrior",
-      "cn": "6"
+      "cardName": "Rogue",
+      "cardType": "Warrior",
+      "collectorsNumber": "6"
     },
     {
-      "Card Name": "Tactician",
-      "Card Type": "Warrior",
-      "cn": "7"
+      "cardName": "Tactician",
+      "cardType": "Warrior",
+      "collectorsNumber": "7"
     },
     {
-      "Card Name": "Wizard",
-      "Card Type": "Warrior",
-      "cn": "8"
+      "cardName": "Wizard",
+      "cardType": "Warrior",
+      "collectorsNumber": "8"
     }
   ],
   "Weapon": [
     {
-      "Card Name": "Battle Axe",
-      "Card Type": "Weapon",
-      "cn": "9"
+      "cardName": "Battle Axe",
+      "cardType": "Weapon",
+      "collectorsNumber": "9"
     },
     {
-      "Card Name": "Blazing Sun",
-      "Card Type": "Weapon",
-      "cn": "10"
+      "cardName": "Blazing Sun",
+      "cardType": "Weapon",
+      "collectorsNumber": "10"
     },
     {
-      "Card Name": "Chargebreaker Lance",
-      "Card Type": "Weapon",
-      "cn": "11"
+      "cardName": "Chargebreaker Lance",
+      "cardType": "Weapon",
+      "collectorsNumber": "11"
     },
     {
-      "Card Name": "Falling Star",
-      "Card Type": "Weapon",
-      "cn": "12"
+      "cardName": "Falling Star",
+      "cardType": "Weapon",
+      "collectorsNumber": "12"
     },
     {
-      "Card Name": "Greatmaul",
-      "Card Type": "Weapon",
-      "cn": "13"
+      "cardName": "Greatmaul",
+      "cardType": "Weapon",
+      "collectorsNumber": "13"
     },
     {
-      "Card Name": "Longsword",
-      "Card Type": "Weapon",
-      "cn": "14"
+      "cardName": "Longsword",
+      "cardType": "Weapon",
+      "collectorsNumber": "14"
     },
     {
-      "Card Name": "Morphing Weapon",
-      "Card Type": "Weapon",
-      "cn": "15"
+      "cardName": "Morphing Weapon",
+      "cardType": "Weapon",
+      "collectorsNumber": "15"
     },
     {
-      "Card Name": "New Moon",
-      "Card Type": "Weapon",
-      "cn": "16"
+      "cardName": "New Moon",
+      "cardType": "Weapon",
+      "collectorsNumber": "16"
     },
     {
-      "Card Name": "Nifil and Van",
-      "Card Type": "Weapon",
-      "cn": "17"
+      "cardName": "Nifil and Van",
+      "cardType": "Weapon",
+      "collectorsNumber": "17"
     },
     {
-      "Card Name": "Rapier",
-      "Card Type": "Weapon",
-      "cn": "18"
+      "cardName": "Rapier",
+      "cardType": "Weapon",
+      "collectorsNumber": "18"
     },
     {
-      "Card Name": "Seeking Spear",
-      "Card Type": "Weapon",
-      "cn": "19"
+      "cardName": "Seeking Spear",
+      "cardType": "Weapon",
+      "collectorsNumber": "19"
     },
     {
-      "Card Name": "Trickshot Bow",
-      "Card Type": "Weapon",
-      "cn": "20"
+      "cardName": "Trickshot Bow",
+      "cardType": "Weapon",
+      "collectorsNumber": "20"
     }
   ]
 }
