@@ -1,0 +1,333 @@
+{
+  "Armor": [
+    {
+      "Card Name": "Heavy Plate",
+      "Card Type": "Armor",
+      "cn": "21"
+    },
+    {
+      "Card Name": "Iron Boots",
+      "Card Type": "Armor",
+      "cn": "22"
+    },
+    {
+      "Card Name": "Khazradanium Armor",
+      "Card Type": "Armor",
+      "cn": "23"
+    },
+    {
+      "Card Name": "Magic Armor",
+      "Card Type": "Armor",
+      "cn": "24"
+    },
+    {
+      "Card Name": "Mask of the Betrayed",
+      "Card Type": "Armor",
+      "cn": "25"
+    },
+    {
+      "Card Name": "Shadow Cloak",
+      "Card Type": "Armor",
+      "cn": "26"
+    },
+    {
+      "Card Name": "Spiked Shield",
+      "Card Type": "Armor",
+      "cn": "27"
+    }
+  ],
+  "Encounter": [
+    {
+      "Card Name": "Out of the Frying Pan",
+      "Card Type": "Encounter",
+      "cn": "E01"
+    },
+    {
+      "Card Name": "Förbanneld, Who Stole From Death",
+      "Card Type": "Encounter",
+      "cn": "E02"
+    },
+    {
+      "Card Name": "Cursed Treasure",
+      "Card Type": "Encounter",
+      "cn": "E03"
+    }
+  ],
+  "Reinforcement": [
+    {
+      "Card Name": "Alluring Statue",
+      "Card Type": "Reinforcement",
+      "cn": "47"
+    },
+    {
+      "Card Name": "Mystical Duplicate",
+      "Card Type": "Reinforcement",
+      "cn": "48"
+    },
+    {
+      "Card Name": "Owl Familiar",
+      "Card Type": "Reinforcement",
+      "cn": "49"
+    },
+    {
+      "Card Name": "Warhorse",
+      "Card Type": "Reinforcement",
+      "cn": "50"
+    }
+  ],
+  "Mastery": [
+    {
+      "Card Name": "Arcane Bolts",
+      "Card Type": "Mastery",
+      "cn": "28"
+    },
+    {
+      "Card Name": "Counterspell",
+      "Card Type": "Mastery",
+      "cn": "29"
+    },
+    {
+      "Card Name": "Drinking Contest",
+      "Card Type": "Mastery",
+      "cn": "30"
+    },
+    {
+      "Card Name": "Fireball",
+      "Card Type": "Mastery",
+      "cn": "31"
+    },
+    {
+      "Card Name": "Gift of Prophecy",
+      "Card Type": "Mastery",
+      "cn": "32"
+    },
+    {
+      "Card Name": "Mend",
+      "Card Type": "Mastery",
+      "cn": "33"
+    },
+    {
+      "Card Name": "Pickpocket",
+      "Card Type": "Mastery",
+      "cn": "34"
+    },
+    {
+      "Card Name": "Punishing Stance",
+      "Card Type": "Mastery",
+      "cn": "35"
+    },
+    {
+      "Card Name": "Sabotage",
+      "Card Type": "Mastery",
+      "cn": "36"
+    },
+    {
+      "Card Name": "Split The Arrow",
+      "Card Type": "Mastery",
+      "cn": "37"
+    },
+    {
+      "Card Name": "Water Spray",
+      "Card Type": "Mastery",
+      "cn": "38"
+    }
+  ],
+  "Accessory": [
+    {
+      "Card Name": "Ball Bearings",
+      "Card Type": "Accessory",
+      "cn": "39"
+    },
+    {
+      "Card Name": "Disguise Kit",
+      "Card Type": "Accessory",
+      "cn": "40"
+    },
+    {
+      "Card Name": "Dubious Potion",
+      "Card Type": "Accessory",
+      "cn": "41"
+    },
+    {
+      "Card Name": "Elven Pendant",
+      "Card Type": "Accessory",
+      "cn": "42"
+    },
+    {
+      "Card Name": "Pheonix Feather",
+      "Card Type": "Accessory",
+      "cn": "43"
+    },
+    {
+      "Card Name": "Speed Potion",
+      "Card Type": "Accessory",
+      "cn": "44"
+    },
+    {
+      "Card Name": "Spellbook",
+      "Card Type": "Accessory",
+      "cn": "45"
+    },
+    {
+      "Card Name": "Warrior's Emblem",
+      "Card Type": "Accessory",
+      "cn": "46"
+    }
+  ],
+  "Augment": [
+    {
+      "Card Name": "Flashblack: Detective",
+      "Card Type": "Augment",
+      "cn": "51"
+    },
+    {
+      "Card Name": "Flashback: Kineticist",
+      "Card Type": "Augment",
+      "cn": "51"
+    },
+    {
+      "Card Name": "Hall of Heroes: Rise Into Legend",
+      "Card Type": "Augment",
+      "cn": "52"
+    },
+    {
+      "Card Name": "Hall of Heroes: Tactical Advantage",
+      "Card Type": "Augment",
+      "cn": "52"
+    },
+    {
+      "Card Name": "Instructum Incantarum: Nullification Aura",
+      "Card Type": "Augment",
+      "cn": "53"
+    },
+    {
+      "Card Name": "Instructum Incantarum: The Elder Ritual",
+      "Card Type": "Augment",
+      "cn": "53"
+    },
+    {
+      "Card Name": "Menagerie of Mischief: Buying Influence",
+      "Card Type": "Augment",
+      "cn": "54"
+    },
+    {
+      "Card Name": "Menagerie of Mischief: Feint",
+      "Card Type": "Augment",
+      "cn": "54"
+    },
+    {
+      "Card Name": "Strike A Deal: Fae",
+      "Card Type": "Augment",
+      "cn": "55"
+    },
+    {
+      "Card Name": "Strike A Deal: Fel",
+      "Card Type": "Augment",
+      "cn": "55"
+    }
+  ],
+  "Warrior": [
+    {
+      "Card Name": "Adventurer",
+      "Card Type": "Warrior",
+      "cn": "1"
+    },
+    {
+      "Card Name": "Bard",
+      "Card Type": "Warrior",
+      "cn": "2"
+    },
+    {
+      "Card Name": "Berserker",
+      "Card Type": "Warrior",
+      "cn": "3"
+    },
+    {
+      "Card Name": "Cleric",
+      "Card Type": "Warrior",
+      "cn": "4"
+    },
+    {
+      "Card Name": "Druid",
+      "Card Type": "Warrior",
+      "cn": "5"
+    },
+    {
+      "Card Name": "Rogue",
+      "Card Type": "Warrior",
+      "cn": "6"
+    },
+    {
+      "Card Name": "Tactician",
+      "Card Type": "Warrior",
+      "cn": "7"
+    },
+    {
+      "Card Name": "Wizard",
+      "Card Type": "Warrior",
+      "cn": "8"
+    }
+  ],
+  "Weapon": [
+    {
+      "Card Name": "Battle Axe",
+      "Card Type": "Weapon",
+      "cn": "9"
+    },
+    {
+      "Card Name": "Blazing Sun",
+      "Card Type": "Weapon",
+      "cn": "10"
+    },
+    {
+      "Card Name": "Chargebreaker Lance",
+      "Card Type": "Weapon",
+      "cn": "11"
+    },
+    {
+      "Card Name": "Falling Star",
+      "Card Type": "Weapon",
+      "cn": "12"
+    },
+    {
+      "Card Name": "Greatmaul",
+      "Card Type": "Weapon",
+      "cn": "13"
+    },
+    {
+      "Card Name": "Longsword",
+      "Card Type": "Weapon",
+      "cn": "14"
+    },
+    {
+      "Card Name": "Morphing Weapon",
+      "Card Type": "Weapon",
+      "cn": "15"
+    },
+    {
+      "Card Name": "New Moon",
+      "Card Type": "Weapon",
+      "cn": "16"
+    },
+    {
+      "Card Name": "Nifil and Van",
+      "Card Type": "Weapon",
+      "cn": "17"
+    },
+    {
+      "Card Name": "Rapier",
+      "Card Type": "Weapon",
+      "cn": "18"
+    },
+    {
+      "Card Name": "Seeking Spear",
+      "Card Type": "Weapon",
+      "cn": "19"
+    },
+    {
+      "Card Name": "Trickshot Bow",
+      "Card Type": "Weapon",
+      "cn": "20"
+    }
+  ]
+}
