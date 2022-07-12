@@ -42,10 +42,18 @@ export class Constants {
       { name: 'Amidamaru\'s Sacrifice', id: 'c35c4fc4-322d-4e4f-af2d-2cf41abad857'},
       { name: 'Blade of the Last Wolf', id: 'b46eada6-c2a1-4974-b124-002f57c36fb1'},
       { name: 'Blink Stone', id: 'dc37574a-e929-4cbc-b771-d68676eae345'},
+      { name: 'Consuming Quest: Adventure', id: '0459d6f1-f29a-49a4-a4e7-d6f270047902'},
+      { name: 'Consuming Quest: Greed', id: 'feab1053-0a1b-4a90-bed6-b9008d70c5c5'},
+      { name: 'Flesh Puppet', id: '4e89c6ee-1d88-4b45-a807-8b0702385cbb'},
       { name: 'Guardian Gauntlet', id: '305a955a-c39c-4261-945a-239017cb1776'},
       { name: 'Haste', id: '607d9fdb-3ac4-4b85-a251-8a07df5cd80c'},
       { name: 'Phase Boots', id: '29ad0a4a-8e1f-462c-9916-7d2f04b5b27f'},
-      { name: 'Time Egg', id: '77375d92-5a2e-40f9-9c44-683441842158'}
+      { name: 'Roboticist', id: 'da492430-b6f7-4f76-8c56-677043b678d3'},
+      { name: 'Spellbook', id: '44d4c4d0-3a27-4c76-a48f-235a08ec4e52'},
+      { name: 'Talon of the Cursed King', id: '2d04c4df-68ac-442e-8d64-bf48f0d6e6d0' },
+      { name: 'Time Egg', id: '77375d92-5a2e-40f9-9c44-683441842158'},
+      { name: 'Turning Point: Tragic Loss', id: 'fcc394f4-7f1f-49f3-ad8c-14af65a9219a'},
+      { name: 'Turning Point: Triumphant Victory ', id: 'f8f18f3c-a24a-4bd8-836a-06b1d8d22cac'}
     ]
   };
 }
