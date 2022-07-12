@@ -1,2 +1,0 @@
-$kr = Import-Csv .\2020-kings-ransom.csv
-$kr | Select-Object -Property "Card Name","Card Type","cn" | Where-Object { $_.cn -ne "" } | Group-Object -Property "Card Type" -AsHashTable | ConvertTo-Json | Out-File -FilePath "year-setname.json"
