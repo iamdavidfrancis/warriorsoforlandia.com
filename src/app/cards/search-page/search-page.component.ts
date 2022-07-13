@@ -1,5 +1,5 @@
 import { Constants } from './../../common/core/constants';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 import { CardSearch, CardResults, CardData } from './../../common/interfaces/card-models';
 import { CardDataService } from './../../common/core/services/card-data.service';
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';

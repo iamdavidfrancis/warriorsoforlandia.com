@@ -15,7 +15,7 @@ import { CardDataService } from './services/card-data.service';
   exports: []
 })
 export class CoreModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<CoreModule> {
     return {
       ngModule: CoreModule,
       providers: [

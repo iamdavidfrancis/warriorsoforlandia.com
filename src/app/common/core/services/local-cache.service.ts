@@ -1,11 +1,8 @@
 import { Constants } from './../constants';
-import { Observable } from 'rxjs/Observable';
+import { Observable, from, map, mergeMap } from 'rxjs';
 import { LocalStorageService } from './local-storage.service';
 import { Injectable } from '@angular/core';
 import {isEmpty, isString, isNumber, isDate} from 'lodash';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/mergeMap';
 
 @Injectable()
 export class LocalCacheService {
@@ -35,20 +32,22 @@ export class LocalCacheService {
     if (Constants.Instance.cache.useCache) {
       // Check if the item is in local storage, then check if it is expired,
       // then either return the cached value or save the returned value and return it.
-      return this.localStorage.getItem(key)
-        .map((val: CacheStorageRecord) => {
-          if (val) {
-            return (new Date(val.expires)).getTime() > Date.now() ? val : null;
-          }
-          return null;
-        })
-        .mergeMap((val: CacheStorageRecord | null) => {
-          if (!isEmpty(val)) {
-            return Observable.of(val.value);
-          } else {
-            return observable.mergeMap((value: any) => this.value(key, value, expires)); // Set the value
-          }
-        });
+      return this.localStorage.getItem<CacheStorageRecord>(key)
+        .pipe(
+          map<CacheStorageRecord | null, CacheStorageRecord | null>((val: CacheStorageRecord | null) => {
+            if (val) {
+              return ((new Date(val.expires)).getTime() > Date.now() ? val : null) as CacheStorageRecord | null;
+            }
+            return null as CacheStorageRecord | null;
+          }),
+          mergeMap((val: CacheStorageRecord | null) => {
+            if (!isEmpty(val)) {
+              return from([val!.value as T]);
+            } else {
+              return observable.pipe(mergeMap((value: T) => this.value(key, value, expires))); // Set the value
+            }
+          })
+        );
     } else {
       return observable;
     }
@@ -68,7 +67,7 @@ export class LocalCacheService {
     return this.localStorage.setItem(key, {
       expires: _expires,
       value: value
-    }).map(val => val.value);
+    }).pipe(map(val => val.value));
   }
 
   /**

@@ -16,7 +16,7 @@ export class PageHeaderComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes.title.currentValue === changes.title.previousValue) {
+    if (changes['title'].currentValue === changes['title'].previousValue) {
       return;
     }
 
