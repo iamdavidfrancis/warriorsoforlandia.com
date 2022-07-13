@@ -2,7 +2,7 @@
 
 <app-page-content>
 
-  <app-search-form (search)="performSearch($event)" [searchModel]="search"></app-search-form>
+  <app-search-form (search)="performSearch($event, 0)" [searchModel]="search"></app-search-form>
 
   <mat-spinner *ngIf="searching"></mat-spinner>
 
@@ -23,5 +23,13 @@
         </mat-grid-tile>
       </mat-grid-list>
     </div>
+    <mat-paginator
+      (page)="handlePageEvent($event)"
+      [length]="results.totalCount"
+      [pageSize]="pageSize"
+      [showFirstLastButtons]="true"
+      [pageSizeOptions]="pageSizeOptions"
+      [pageIndex]="pageIndex">
+    </mat-paginator>
   </div>
 </app-page-content>

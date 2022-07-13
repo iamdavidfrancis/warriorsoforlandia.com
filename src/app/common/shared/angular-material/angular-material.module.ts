@@ -49,6 +49,10 @@ import {
   MatProgressSpinnerModule
 } from '@angular/material/progress-spinner';
 
+import {
+  MatPaginatorModule
+} from '@angular/material/paginator';
+
 @NgModule({
   imports: [
     CommonModule
@@ -66,7 +70,8 @@ import {
     MatInputModule,
     MatOptionModule,
     MatSelectModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatPaginatorModule
   ]
 })
 export class AngularMaterialModule { }

@@ -2,11 +2,15 @@
 export interface CardResults {
   results: Array<CardData>;
   resultCount: number;
+  totalCount: number;
 
   // TODO: Add paging?
 }
 
 export interface CardSearch {
+  page?: number;
+  pageSize?: number;
+  usePaging?: boolean;
   name?: string;
   type?: string;
   set?: string;

@@ -4,6 +4,7 @@ import { CardSearch, CardResults, CardData } from './../../common/interfaces/car
 import { CardDataService } from './../../common/core/services/card-data.service';
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { PageEvent } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-search-page',
@@ -17,6 +18,10 @@ export class SearchPageComponent implements OnInit, OnDestroy {
   public error: any;
 
   public gridColumns = 4;
+
+  public pageIndex = 0;
+  public pageSize = this.gridColumns * 3;
+  public pageSizeOptions = [ 3, 6, 12, 24, 48 ];
 
   private searchSubscription: Subscription;
   private routeSubscription: Subscription;
@@ -46,6 +51,9 @@ export class SearchPageComponent implements OnInit, OnDestroy {
         sortOrder: params['sort']
       };
 
+      this.pageIndex = params['page'] ? parseInt(params['page']) : 0;
+      this.pageSize = params['pageSize'] ? parseInt(params['pageSize']) : this.gridColumns * 3;
+
       this.searchInternal();
     });
   }
@@ -71,9 +79,11 @@ export class SearchPageComponent implements OnInit, OnDestroy {
     } else {
       this.gridColumns = 4;
     }
+
+    this.pageSize = this.gridColumns * 3;
   }
 
-  public performSearch(search: CardSearch): void {
+  public performSearch(search: CardSearch, pageIndex: number): void {
     this.router.navigate(['cards'], {
       queryParams: {
         name: search.name,
@@ -81,8 +91,17 @@ export class SearchPageComponent implements OnInit, OnDestroy {
         set: search.set,
         artist: search.artist,
         sort: search.sortOrder,
+        page: pageIndex,
+        pageSize: this.pageSize
       }
     });
+  }
+
+  public handlePageEvent(event: PageEvent) {
+    this.pageIndex = event.pageIndex;
+    this.pageSize = event.pageSize;
+
+    this.performSearch(this.search, this.pageIndex);
   }
 
   private searchInternal() {
@@ -97,12 +116,19 @@ export class SearchPageComponent implements OnInit, OnDestroy {
       this.searchSubscription.unsubscribe();
     }
 
-    this.searchSubscription = this.cardDataService.searchCards(this.search).subscribe(data => {
-      this.results = data;
-      this.searching = false;
-    }, error => {
-      this.searching = false;
-      this.error = error;
+    this.search.usePaging = true;
+    this.search.pageSize = this.pageSize;
+    this.search.page = this.pageIndex;
+
+    this.searchSubscription = this.cardDataService.searchCards(this.search).subscribe({ 
+      next: data => {
+        this.results = data;
+        this.searching = false;
+      }, 
+      error: error => {
+        this.searching = false;
+        this.error = error;
+      }
     });
   }
 
