@@ -7,6 +7,6 @@ before_script:
   - npm install -g @angular/cli
   - npm install -g angular-cli-ghpages
   - npm install
-  - ng build --prod --aot --base-href="https://warriorsoforlandia.com"
+  - ng build --aot --base-href="https://warriorsoforlandia.com"
 
 script: angular-cli-ghpages --repo=https://GH_TOKEN@github.com/iamdavidfrancis/warriorsoforlandia.com.git --name="Travis CI" --email=iamdavidfrancis@gmail.com
