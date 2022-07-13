@@ -1,28 +1,41 @@
 <form *ngIf="!loadingSets && !loadingTypes" (ngSubmit)="onSubmit()" #searchForm>
-  <mat-form-field class="card-name">
-    <input matInput placeholder="Card Name" [(ngModel)]="searchModel.name" name="card-name">
-  </mat-form-field>
+  <div class="form-container" [ngClass]="{ 'mobile': isMobile }">
+    <mat-form-field class="card-name">
+      <input matInput placeholder="Card Name" [(ngModel)]="searchModel.name" name="card-name">
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-select placeholder="Card Type" [(ngModel)]="searchModel.type" name="card-type">
-      <mat-option *ngFor="let type of types" [value]="type.id">
-        {{type.name}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Card Type" [(ngModel)]="searchModel.type" name="card-type">
+        <mat-option *ngFor="let type of types" [value]="type.id">
+          {{type.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-select placeholder="Set" [(ngModel)]="searchModel.set" name="card-set">
-      <mat-option *ngFor="let set of sets" [value]="set.code">
-        {{set.name}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Set" [(ngModel)]="searchModel.set" name="card-set">
+        <mat-option *ngFor="let set of sets" [value]="set.code">
+          {{set.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
 
-  <mat-form-field class="card-artist">
-    <input matInput placeholder="Artist" [(ngModel)]="searchModel.artist" name="card-artist">
-  </mat-form-field>
+    <mat-form-field class="card-artist">
+      <input matInput placeholder="Artist" [(ngModel)]="searchModel.artist" name="card-artist">
+    </mat-form-field>
 
-  <button mat-button type="button" (click)="onSubmit()" color="primary">Search</button>
-  <button mat-button type="button" (click)="searchForm.reset();" color="warn">Reset</button>
+    <mat-form-field>
+      <mat-select placeholder="Sort Order" [(ngModel)]="searchModel.sortOrder" name="card-sort">
+        <mat-option *ngFor="let sortItem of sort" [value]="sortItem.value">
+          {{sortItem.display}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="button-container">
+    <div class="buttons">
+      <button mat-button type="submit" (click)="onSubmit()" mat-flat-button color="primary">Search</button>
+      <button mat-button type="button" (click)="searchForm.reset();" mat-flat-button color="warn">Reset</button>
+    </div>
+  </div>
 </form>

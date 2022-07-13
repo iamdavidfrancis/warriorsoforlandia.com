@@ -8,6 +8,7 @@ import { CardsRoutingModule } from './cards-routing.module';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { CardDetailsComponent } from './card-details/card-details.component';
 import { SearchFormComponent } from './search-form/search-form.component';
+import {LayoutModule} from '@angular/cdk/layout';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { SearchFormComponent } from './search-form/search-form.component';
     CardsRoutingModule,
     AngularMaterialModule,
     SharedComponentsModule,
-    FormsModule
+    FormsModule,
+    LayoutModule
   ],
   declarations: [SearchPageComponent, CardDetailsComponent, SearchFormComponent]
 })

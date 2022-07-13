@@ -1,3 +1,22 @@
 form {
   padding-top: 15px;
+  padding-bottom: 15px;
+
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+
+    &.mobile {
+      flex-direction: column;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+
+    .buttons :first-child {
+      margin-right: 0.5rem;
+    }
+  }
 }

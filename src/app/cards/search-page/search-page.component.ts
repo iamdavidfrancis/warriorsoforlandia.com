@@ -33,7 +33,8 @@ export class SearchPageComponent implements OnInit, OnDestroy {
       name: '',
       type: '',
       set: '',
-      artist: ''
+      artist: '',
+      sortOrder: '',
     };
 
     this.routeSubscription = this.route.queryParams.subscribe(params => {
@@ -41,7 +42,8 @@ export class SearchPageComponent implements OnInit, OnDestroy {
         name: params['name'],
         type: params['type'],
         set: params['set'],
-        artist: params['artist']
+        artist: params['artist'],
+        sortOrder: params['sort']
       };
 
       this.searchInternal();
@@ -77,7 +79,8 @@ export class SearchPageComponent implements OnInit, OnDestroy {
         name: search.name,
         type: search.type,
         set: search.set,
-        artist: search.artist
+        artist: search.artist,
+        sort: search.sortOrder,
       }
     });
   }

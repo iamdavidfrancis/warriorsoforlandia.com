@@ -11,6 +11,7 @@ export interface CardSearch {
   type?: string;
   set?: string;
   artist?: string;
+  sortOrder?: string;
 }
 
 export interface CardData {
@@ -33,6 +34,11 @@ export interface CardData {
   wisdom?: number;
   damage?: number;
   defense?: number;
+}
+
+export interface SortOrder {
+  display: string;
+  value: string;
 }
 
 export interface Set {
