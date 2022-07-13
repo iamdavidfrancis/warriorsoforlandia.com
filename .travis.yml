@@ -7,6 +7,16 @@ before_script:
   - npm install --location=global @angular/cli
   - npm install --location=global angular-cli-ghpages
   - npm install
-  - ng build --aot --base-href="https://warriorsoforlandia.com"
 
-script: npx angular-cli-ghpages -d dist/warriors-site --repo=https://GH_TOKEN@github.com/iamdavidfrancis/warriorsoforlandia.com.git --name="Travis CI" --email=iamdavidfrancis@gmail.com
+script: ng build --aot --base-href="https://warriorsoforlandia.com"
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  keep_history: true
+  on:
+    branch: main
+  local_dir: dist/warriors-site
+  target_branch: gh_pages
+  fqdn: warriorsoforlandia.com
