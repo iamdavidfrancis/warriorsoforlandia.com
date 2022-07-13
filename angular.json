@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "warriors-app": {
+    "warriors-site": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/warriors-app",
+            "outputPath": "dist/warriors-site",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "warriors-app:build:production"
+              "browserTarget": "warriors-site:build:production"
             },
             "development": {
-              "browserTarget": "warriors-app:build:development"
+              "browserTarget": "warriors-site:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "warriors-app:build"
+            "browserTarget": "warriors-site:build"
           }
         },
         "test": {
