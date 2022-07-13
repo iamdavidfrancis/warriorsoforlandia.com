@@ -3,10 +3,6 @@ language: node_js
 node_js:
   - '17'
 
-branches:
-  only:
-  - master
-
 before_script:
   - npm install --location=global @angular/cli
   - npm install --location=global angular-cli-ghpages
