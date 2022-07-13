@@ -18,5 +18,5 @@ deploy:
   on:
     branch: master
   local_dir: dist/warriors-site
-  target_branch: gh_pages
+  target_branch: gh-pages
   fqdn: warriorsoforlandia.com
