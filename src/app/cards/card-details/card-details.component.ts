@@ -3,7 +3,7 @@ import { CardDataService } from './../../common/core/services/card-data.service'
 import { CardData } from './../../common/interfaces/card-models';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Subscription } from 'rxjs/Rx';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-card-details',
@@ -40,7 +40,7 @@ export class CardDetailsComponent implements OnInit, OnDestroy {
       this.cardDataService.getCard(id).subscribe(card => {
         this.card = card;
         this.loading = false;
-        this.cardTitle = card.name;
+        this.cardTitle = card.name || '';
         this.cardThumbUrl = this.cardDataService.getCardImageUrl(card, true);
         this.cardImageUrl = this.cardDataService.getCardImageUrl(card);
       }, (error: HttpError) => {

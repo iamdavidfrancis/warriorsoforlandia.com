@@ -119,7 +119,7 @@
           Set:
         </span>
         <span class="card-value">
-          {{card.set.name}} ({{card.set.code}})
+          {{!!card.set ? card.set.name : ''}} ({{!!card.set ? card.set.code : ''}})
         </span> 
       </div>
       <div class="card-data-item" *ngIf="card.collectorsNumber">
@@ -131,7 +131,7 @@
         </span> 
       </div>
 
-      <div class="attack-grid" *ngIf="card.type === 'Warrior' || card.type === 'Weapon'">
+      <div class="attack-grid" *ngIf="(card.type === 'Warrior' || card.type === 'Weapon') && card.attackGrid">
         <div class="card-data-item">
           <span class="card-label">
             Attack Grid:

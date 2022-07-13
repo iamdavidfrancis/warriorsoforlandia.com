@@ -1,8 +1,7 @@
 import { LocalCacheService } from './local-cache.service';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
+import { Observable, map } from 'rxjs';
 
 import { Constants } from './../constants';
 import { CardResults, CardSearch, CardData, Set, Type } from './../../interfaces/card-models';
@@ -27,14 +26,20 @@ export class CardDataService {
 
     const observable = this.httpClient.get<CardData>(queryUrl);
 
+    
+
     return this.cache.observable(cacheKey, observable)
-      .map(card => {
+      .pipe(map(card => {
+        if (!card) {
+          return card;
+        }
+
         // Format the card ability nicely. Maybe move somewhere else.
-        card.ability = card.ability.split('\n').join('<br/>');
-        card.flavorText = card.flavorText.split('\n').join('<br/>');
+        card.ability = !!card.ability ? card.ability.split('\n').join('<br/>') : '';
+        card.flavorText = !!card.flavorText ? card.flavorText.split('\n').join('<br/>') : '';
 
         return card;
-      });
+      }));
   }
 
   public getSets(): Observable<Array<Set>> {
@@ -58,8 +63,8 @@ export class CardDataService {
   public getCardImageUrl(card: CardData, loadThumbnail: boolean = false): string {
     let path = loadThumbnail ? Constants.Instance.http.cards.thumbnail : Constants.Instance.http.cards.image;
 
-    path = path.replace('{{setYear}}', card.set.year);
-    path = path.replace('{{type}}', card.type.toLowerCase());
+    path = path.replace('{{setYear}}', card.set?.year || '');
+    path = path.replace('{{type}}', card.type?.toLowerCase() || '');
     path = path.replace('{{name}}', this.cleanName(card.name));
 
     return this.buildUrl(path, true);
@@ -69,7 +74,11 @@ export class CardDataService {
     return (staticsUrl ? Constants.Instance.http.staticsBaseUrl : Constants.Instance.http.baseUrl) + path;
   }
 
-  private cleanName(name: string): string {
+  private cleanName(name?: string): string {
+    if (!name) {
+      return '';
+    }
+
     name = name.toLowerCase().trim();
     name = name.split(' ').join('-');
     name = name.split('\'').join('');

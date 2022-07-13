@@ -1,7 +1,7 @@
 import { CardDataService } from './../../common/core/services/card-data.service';
 import { CardSearch, Set, Type } from './../../common/interfaces/card-models';
 import { Component, OnInit, OnDestroy, Output, EventEmitter, Input } from '@angular/core';
-import { Subscription } from 'rxjs/Rx';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-search-form',

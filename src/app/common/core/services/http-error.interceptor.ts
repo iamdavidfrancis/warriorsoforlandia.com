@@ -1,16 +1,14 @@
 import { LocalStorageService } from './local-storage.service';
 import { HttpError } from './../../interfaces/http-error.interface';
-import { Observable } from 'rxjs/Observable';
+import { Observable, catchError, throwError } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor } from '@angular/common/http';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/observable/throw';
 
 @Injectable()
 export class HttpErrorInterceptor implements HttpInterceptor {
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    return next.handle(req).catch(error => {
+    return next.handle(req).pipe(catchError(error => {
       const httpError: HttpError = {
         status: error.status,
         title: '',
@@ -29,8 +27,8 @@ export class HttpErrorInterceptor implements HttpInterceptor {
           httpError.message = 'An unknown error has occurred';
       }
 
-      return Observable.throw(httpError);
-    });
+      return throwError(() => httpError);
+    }));
   }
 
 }

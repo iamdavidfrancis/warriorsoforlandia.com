@@ -14,7 +14,7 @@
       </mat-card-header>
       <img mat-card-image [src]='cardImageUrl' [alt]='card.name'>  
       <mat-card-content>
-        This is an example of an {{card.type}} card from the <em>{{card.set.name}}</em> set. You can find all of the cards on the cards page.
+        This is an example of an {{card.type}} card from the <em>{{!!card.set ? card.set.name : ''}}</em> set. You can find all of the cards on the cards page.
       </mat-card-content>
     </mat-card>
     

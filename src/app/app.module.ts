@@ -10,7 +10,6 @@ import { HttpErrorInterceptor } from './common/core/services/http-error.intercep
 import { AppComponent } from './app.component';
 import { NavBarModule } from './common/shared/components/navbar/navbar.component';
 import { FooterModule } from './common/shared/components/footer/footer.component';
-import { PageHeaderComponent } from './common/shared/components/page-header/page-header.component';
 
 @NgModule({
   declarations: [
