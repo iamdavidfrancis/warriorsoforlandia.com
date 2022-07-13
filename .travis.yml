@@ -16,7 +16,7 @@ deploy:
   github_token: $GH_TOKEN
   keep_history: true
   on:
-    branch: main
+    branch: master
   local_dir: dist/warriors-site
   target_branch: gh_pages
   fqdn: warriorsoforlandia.com
