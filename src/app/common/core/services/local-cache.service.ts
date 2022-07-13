@@ -2,7 +2,10 @@ import { Constants } from './../constants';
 import { Observable, from, map, mergeMap } from 'rxjs';
 import { LocalStorageService } from './local-storage.service';
 import { Injectable } from '@angular/core';
-import {isEmpty, isString, isNumber, isDate} from 'lodash';
+import isEmpty from 'lodash-es/isEmpty';
+import isString from 'lodash-es/isString';
+import isNumber from 'lodash-es/isNumber';
+import isDate from 'lodash-es/isDate';
 
 @Injectable()
 export class LocalCacheService {
