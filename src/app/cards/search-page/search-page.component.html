@@ -4,12 +4,13 @@
 
   <app-search-form (search)="performSearch($event, 0)" [searchModel]="search"></app-search-form>
 
-  <mat-spinner *ngIf="searching"></mat-spinner>
+  <mat-spinner *ngIf="searching" class="spinner"></mat-spinner>
 
   <div class="error" *ngIf="error">
     {{error}}
   </div>
   <div class="results" *ngIf="results && !searching && !error">
+    <h3>Cards</h3>
     <div class="results-grid">
       <mat-grid-list [cols]="gridColumns" rowHeight="1:1.34" gutterSize="10">
         <mat-grid-tile *ngFor="let card of results.results">

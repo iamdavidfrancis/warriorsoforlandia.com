@@ -16,6 +16,7 @@ export interface CardSearch {
   set?: string;
   artist?: string;
   sortOrder?: string;
+  textSearch?: string;
 }
 
 export interface CardData {

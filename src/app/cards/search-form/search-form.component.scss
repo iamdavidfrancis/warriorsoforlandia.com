@@ -6,9 +6,7 @@ form {
     display: flex;
     justify-content: space-between;
 
-    &.mobile {
-      flex-direction: column;
-    }
+    flex-direction: column;
   }
 
   .button-container {
