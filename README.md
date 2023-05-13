@@ -1,4 +1,4 @@
 # warriorsoforlandia.com
 
-[![Build Status](https://travis-ci.org/iamdavidfrancis/warriorsoforlandia.com.png?branch=master)](https://travis-ci.org/iamdavidfrancis/warriorsoforlandia.com)
+[![Build and Deploy](https://github.com/iamdavidfrancis/warriorsoforlandia.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/iamdavidfrancis/warriorsoforlandia.com/actions/workflows/deploy.yml)
 
